@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado Super Listo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <header>
+        <div class="logo">🛒 Super Listo</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle" aria-label="Cambiar modo oscuro">🌙</button>
+    </header>
+
+    <!-- Sección Inicio (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Todo lo que necesitas para tu hogar al mejor precio</h1>
+            <p>Frescura, calidad y economía todos los días en un solo lugar.</p>
+            <a href="#portafolio" class="btn">Ver Ofertas</a>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="quienes-somos" class="container">
+        <h2>Quiénes Somos</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>En <strong>Supermercado Super Listo</strong> nos comprometemos a llevar los mejores productos frescos de la región directamente a tu mesa. Trabajamos de la mano con productores locales para garantizar frutas, verduras, carnes y abarrotes de la más alta calidad, ofreciendo siempre una experiencia de compra rápida, cómoda y cercana para toda la familia.</p>
+            </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="Pasillo de supermercado moderno">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio (Departamentos / Productos) -->
+    <section id="portafolio" class="container">
+        <h2>Nuestros Departamentos</h2>
+        <div class="grid-gallery">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=400&q=80" alt="Frutas y Verduras Frescas">
+                <h3>Frutas y Verduras</h3>
+                <p>Cosecha fresca del campo diario, 100% seleccionadas para ti.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?auto=format&fit=crop&w=400&q=80" alt="Carnicería y Lácteos">
+                <h3>Carnicería y Lácteos</h3>
+                <p>Cortes frescos, embutidos y productos lácteos de primera calidad.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1584727638096-042c45049ebe?auto=format&fit=crop&w=400&q=80" alt="Abarrotes y Despensa">
+                <h3>Abarrotes y Despensa</h3>
+                <p>Gran variedad de marcas y productos esenciales para surtir tu hogar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="container bg-light">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-box">
+                <h3>🛵 Servicio a Domicilio</h3>
+                <p>Haz tus compras desde casa y recíbelas rápidamente en la puerta de tu hogar.</p>
+            </div>
+            <div class="service-box">
+                <h3>🏷️ Ofertas Semanales</h3>
+                <p>Aprovecha nuestros descuentos especiales en canasta básica todos los fines de semana.</p>
+            </div>
+            <div class="service-box">
+                <h3>💳 Pagos Múltiples</h3>
+                <p>Aceptamos tarjetas de débito, crédito, transferencias y pagos en efectivo de forma segura.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="container">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Tu nombre completo">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" placeholder="tu@correo.com">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje o Sugerencia:</label>
+                <textarea id="mensaje" rows="4" placeholder="¿Cómo podemos ayudarte?"></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+            <p id="form-message" class="hidden"></p>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 Supermercado Super Listo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
